@@ -1,0 +1,70 @@
+<div class="user-edit" ng-show="userCtrl.user.canEdit">
+	<div class="row">
+		<div class="small-3 columns">
+			<label>First Name: </label><input type="text" ng-model="userCtrl.user.firstName">
+		</div>
+		<div class="small-3 columns">
+			<label>Last Name: </label><input type="text" ng-model="userCtrl.user.lastName">
+		</div>
+		<div class="small-2 columns">
+			<label>Gender: </label><input type="text" ng-model="userCtrl.user.gender">
+		</div>
+		<div class="small-4 columns">
+			<label>Email: </label><input type="text" ng-model="userCtrl.user.email">
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-12 columns">
+			<label>Street:</label><input type="text" ng-model="userCtrl.user.street">
+		</div>
+	</div>
+	<div class="row">
+		<div class="small-4 columns">
+			<label>City:</label><input type="text" ng-model="userCtrl.user.city">
+		</div>
+		<div class="small-4 columns">
+			<label>Country:</label><input type="text" ng-model="userCtrl.user.country">
+		</div>
+		<div class="small-4 columns">
+			<label>Zip Code:</label><input type="text" ng-model="userCtrl.user.zip">
+		</div>
+	</div>
+</div>
+<div class="user-view" ng-hide="userCtrl.user.canEdit">
+	<div class="row">
+		<div class="small-12 columns">
+			<h3>{{userCtrl.user.firstName}} {{userCtrl.user.lastName}}</h3>
+		</div>
+	</div>
+	<div class="information">
+		<div class="row buffer-top">
+			<div class="small-2 columns">
+				<b>Gender:</b>
+			</div>
+			<div class="small-10 columns">
+				{{userCtrl.user.gender}}
+			</div>
+		</div>
+		<div class="row buffer-top">
+			<div class="small-2 columns">
+				<b>email: </b>
+			</div>
+			<div class="small-10 columns">
+				{{userCtrl.user.email}}
+			</div>
+		</div>
+		<div class="row buffer-top">
+			<div class="small-2 columns">
+				<b>Address: </b>
+			</div>
+			<div class="small-10 columns">
+				{{userCtrl.user.street}}
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-10 small-offset-2 columns">
+				{{userCtrl.user.city}}, {{userCtrl.user.country}} {{userCtrl.user.zip}}
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Angular Mock Back</title>
+
+	<link rel="stylesheet" href="bower_components/foundation/css/normalize.css">
+	<link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+	<link rel="stylesheet" href="bower_components/foundation-icon-fonts/foundation-icons.css">
+	<link rel="stylesheet" href="site.css">
+</head>
+<body ng-app="app">
+
+<div class="container">
+	<div class="row">
+		<nav class="small-3 columns" ng-controller="NavCtrl as navCtrl">
+			<form ng-submit="navCtrl.search()">
+				<input type="text" placeholder="Search..." ng-model="navCtrl.searchQuery">
+			</form>
+			<ul>
+				<li>
+					<a ui-sref="home">Home</a>
+				</li>
+				<li>
+					<a ui-sref="userlist">All Users</a>
+				</li>
+				<li>
+					<a ui-sref="settings">
+						<i class="fi-widget"></i>
+						Settings
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="small-9 columns" ui-view>
+		</div>
+	</div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="app.js"></script>
+
+<!-- @ifdef mockBackend -->
+<!-- @include mock-backend/mock-backend.html -->
+<!-- @endif -->
+
+</body>
+</html>

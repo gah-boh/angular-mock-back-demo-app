@@ -1,0 +1,38 @@
+.container {
+	margin-top: 10px;
+}
+
+ul {
+	list-style: none;
+}
+
+nav {
+	background-color: #efefef;
+	padding-top: 20px;
+	min-height: 400px;
+}
+
+nav ul {
+	margin-left: 0;
+}
+
+nav li {
+	margin-top: 10px;
+}
+
+nav li:hover {
+	background-color: #fff;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.user-list {
+	max-height: 400px;
+	overflow: scroll;
+}
+
+.user-view .information .buffer-top {
+	margin-top: 20px;
+}

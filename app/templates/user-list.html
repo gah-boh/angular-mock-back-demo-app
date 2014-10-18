@@ -1,0 +1,5 @@
+<ul class="user-list">
+	<li ng-repeat="user in userListCtrl.userlist | orderBy:'lastName'">
+		<a ui-sref="user({id: user.id})">{{user.firstName}} {{user.lastName}}</a>
+	</li>
+</ul>

@@ -1,0 +1,5 @@
+<ul>
+	<li ng-repeat="user in searchResultsCtrl.searchResults">
+		<a ui-sref="user({id: user.id})">{{user.firstName}} {{user.lastName}}</a>
+	</li>
+</ul>
