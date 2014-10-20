@@ -4,7 +4,7 @@ Sample application for [angular mock back](https://github.com/gah-boh/angular-mo
 
 ## Setup
 
-This assumes you have [bower](https://github.com/bower/bower) and [gulp](https://github.com/gulpjs/gulp/) as installed globally.
+This assumes you have [bower](https://github.com/bower/bower) and [gulp](https://github.com/gulpjs/gulp/) installed globally.
 
 - Clone the repo
 - Run `bower install`
@@ -14,9 +14,9 @@ This assumes you have [bower](https://github.com/bower/bower) and [gulp](https:/
 
 - To create the mock backend index file run `gulp`
 - Run the server with `node serve`
-- The mocked version of the app is `localhost:9000/index-mb.html`
+- The url for the mocked version of the app is `localhost:9000/index-mb.html`
 
-The mockBackend config is located in  `app/mock-backend/mock-backend-config.js`
+The angular mock back config is located in  `app/mock-backend/mock-backend-config.js`
 
 ## Overrides
 
